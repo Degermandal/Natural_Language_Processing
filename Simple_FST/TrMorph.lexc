@@ -1,0 +1,58 @@
+!!! TrMorph.lexc !!!
+Multichar_Symbols %<N%> %<acc%>
+
+LEXICON Root
+
+Noun ;
+
+LEXICON Noun
+
+kitap Ninf;
+kağıt Ninf;
+bacak Ninf;
+kulak Ninf;
+köpek Ninf;
+bilek Ninf;
+gözlük Ninf;
+renk Ninf;
+kilit Ninf;
+öğüt Ninf;
+tat Ninf;
+ilaç Ninf;
+ağaç Ninf;
+dip Ninf;
+gök Ninf;
+kurt Ninf;
+yurt Ninf;
+uç Ninf;
+çok Ninf;
+dolap Ninf;
+
+sabah Ninf;
+güneş   Ninf;
+ay Ninf;
+pazar Ninf;
+gün Ninf;
+mevsim Ninf;
+abaküs Ninf;
+adam Ninf;
+adım Ninf;
+defter Ninf;
+telefon Ninf;
+mendil Ninf;
+kalem Ninf;
+insan Ninf;
+çöl Ninf;
+mücevher Ninf;
+sultan Ninf;
+tahıl Ninf;
+takvim Ninf;
+termos Ninf;
+
+LEXICON Ninf
+
+%<N%>:0 #;
+%<N%>%<acc%>:^i #;
+%<N%>%<acc%>:^ı #;
+%<N%>%<acc%>:^u #;
+%<N%>%<acc%>:^ü #;

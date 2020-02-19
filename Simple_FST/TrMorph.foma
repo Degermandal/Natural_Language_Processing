@@ -1,0 +1,27 @@
+### TrMorph.foma ###
+
+read lexc TrMorph.lexc
+define Lexicon;
+
+# kelimenin sonuna i gelme hali
+define theWordRootMutationİ p -> b, ç -> c, t -> d, k -> ğ || _ "^"i ;
+# kelimenin sonuna ı gelme hali
+define theWordRootMutationI p -> b, ç -> c, t -> d, k -> ğ || _ "^"ı ;
+# kelimenin sonuna u gelme hali
+define theWordRootMutationU p -> b, ç -> c, t -> d, k -> ğ || _ "^"u ;
+# kelimenin sonuna ü gelme hali
+define theWordRootMutationÜ p -> b, ç -> c, t -> d, k -> ğ || _ "^"ü ;
+# Cleanup 
+define Cleanup "^" -> 0;
+
+read lexc TrMorph.lexc
+define Lexicon
+
+define Grammar Lexicon .o.
+			   theWordRootMutationİ .o.
+			   theWordRootMutationI .o.
+			   theWordRootMutationU .o.
+			   theWordRootMutationÜ .o.
+			   Cleanup;
+			   
+regex Grammar;
